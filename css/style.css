@@ -14,6 +14,11 @@ body{
     padding: 0 15px;
     margin: 0 auto;
     font-size: 14px;
+    
+}
+.header{
+    padding-top: 71px;
+    padding-bottom: 92px;
 }
 .filter{
     font-family: 'Ubuntu', sans-serif;
@@ -30,16 +35,28 @@ body{
 .link-navigation:hover,.link-navigation:focus{
     color: var(--hover-color);
 }
+.photo{
+    padding-bottom: 66px;
+}
 .cards{
     list-style: none;
     width: 420px;
+
+}
+.item-cards{
+    margin-bottom: 130px;
+}
+.img-cards{
+    margin-bottom: 62px;
 }
 .filter{
     color: var(--filter-color);
+    margin-bottom: 32px;
 }
 .title-cards{
     font-size: 30px;
     color: var(--text-color);
+    margin-bottom: 40px;
 }
 .text{
     color: var(--text-color);
@@ -48,7 +65,7 @@ body{
     background-color: white;
     border: 1px solid var(--text-color);
     padding: 20px 49px;
-    font-family: font-family: 'Playfair Display', serif;;
+    font-family: 'Playfair Display', serif;;
     
     
 }
