@@ -4,15 +4,17 @@
     --filter-color:#B4AD9E;
     --text-color:#626262;
 }
-
+.container{
+    width: 936px;
+    padding: 0 15px;
+    margin: 0 auto;
+    border: 1px solid;
+}
 
 /* font-family: 'Playfair Display', serif;
 font-family: 'Ubuntu', sans-serif; */
 body{
     font-family: 'Playfair Display', serif;
-    width: 936px;
-    padding: 0 15px;
-    margin: 0 auto;
     font-size: 14px;
     
 }
