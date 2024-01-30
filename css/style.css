@@ -39,14 +39,10 @@ body{
 .photo{
     padding-bottom: 66px;
 }
-.cards{
-    list-style: none;
-    width: 410px;
-
-}
 .item-cards{
     margin-bottom: 130px;
     display: inline-block;
+        width: 420px;
 }
 .img-cards{
     margin-bottom: 62px;
@@ -67,9 +63,13 @@ body{
     background-color: white;
     border: 1px solid var(--text-color);
     padding: 20px 49px;
-    font-family: 'Playfair Display', serif;;
-    
-    
+    font-family: 'Playfair Display', serif;
+    cursor: pointer;
+}
+.btn:hover,
+.btn:focus{
+    color: var(--hover-color) ;
+    border-color: var(--hover-color);
 }
 .list-navigation{
     display: flex;
@@ -80,5 +80,10 @@ body{
 .cards{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+}
+.button-wrap{
+    display: flex;
+    justify-content: center;
 }
 
