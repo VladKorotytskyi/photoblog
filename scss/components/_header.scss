@@ -1,0 +1,21 @@
+.header{
+    padding-top: 71px;
+    padding-bottom: 92px;
+    &__list{
+        display: flex;
+        justify-content: space-between;
+        width: 555px;
+        margin: 0 auto;
+    }
+    &__link{
+        color: $navigation-color;
+        text-decoration: none;
+        text-transform: uppercase;
+        
+    }
+    &__link:hover,
+    &__link:focus{
+        color: $hover-color;
+        
+    }
+}

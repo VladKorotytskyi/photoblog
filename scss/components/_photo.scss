@@ -1,0 +1,44 @@
+.photo {
+  padding-bottom: 66px;
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  &__img {
+    margin-bottom: 62px;
+  }
+  &__filter {
+    color: $filter-color;
+    margin-bottom: 32px;
+  }
+  &__title {
+    font-size: 30px;
+    color: $text-color;
+    margin-bottom: 40px;
+  }
+  &__text {
+    color: $text-color;
+  }
+  &__item {
+    margin-bottom: 130px;
+    display: inline-block;
+    width: 420px;
+  }
+  &__button-wrap {
+    display: flex;
+    justify-content: center;
+  }
+  &__btn {
+    background-color: $bg-color;
+    border: 1px solid $text-color;
+    padding: 20px 49px;
+    font-family: "Playfair Display", serif;
+    cursor: pointer;
+    &:hover,
+    &:focus {
+      color: $hover-color;
+      border-color: $hover-color;
+    }
+  }
+}
