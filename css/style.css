@@ -35,6 +35,7 @@ h1, h2, h3, h4, h5, h6, p {
   padding-top: 71px;
   padding-bottom: 92px;
 }
+
 .header__list {
   display: flex;
   justify-content: space-between;
@@ -50,13 +51,21 @@ h1, h2, h3, h4, h5, h6, p {
   color: #03A9F4;
 }
 
+.photo__btn {
+  background-color: #FFF;
+  border: 1px solid #626262;
+  padding: 20px 49px;
+  font-family: "Playfair Display", serif;
+  cursor: pointer;
+}
+
 .photo {
   padding-bottom: 66px;
 }
 .photo__list {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .photo__img {
   margin-bottom: 62px;
@@ -81,13 +90,6 @@ h1, h2, h3, h4, h5, h6, p {
 .photo__button-wrap {
   display: flex;
   justify-content: center;
-}
-.photo__btn {
-  background-color: #FFF;
-  border: 1px solid #626262;
-  padding: 20px 49px;
-  font-family: "Playfair Display", serif;
-  cursor: pointer;
 }
 .photo__btn:hover, .photo__btn:focus {
   color: #03A9F4;

@@ -1,9 +1,11 @@
-.header{
+%padding{
     padding-top: 71px;
     padding-bottom: 92px;
+}
+.header{
+    @extend %padding;
     &__list{
-        display: flex;
-        justify-content: space-between;
+       @include flex();
         width: 555px;
         margin: 0 auto;
     }
@@ -19,3 +21,4 @@
         
     }
 }
+

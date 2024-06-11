@@ -1,9 +1,15 @@
+%btn{
+  background-color: $bg-color;
+  border: 1px solid $text-color;
+  padding: 20px 49px;
+  font-family: $main-font;
+  cursor: pointer;
+}
 .photo {
   padding-bottom: 66px;
   &__list {
-    display: flex;
+    @include flex();
     flex-wrap: wrap;
-    justify-content: space-between;
   }
   &__img {
     margin-bottom: 62px;
@@ -13,9 +19,7 @@
     margin-bottom: 32px;
   }
   &__title {
-    font-size: 30px;
-    color: $text-color;
-    margin-bottom: 40px;
+   @include title();
   }
   &__text {
     color: $text-color;
@@ -30,11 +34,7 @@
     justify-content: center;
   }
   &__btn {
-    background-color: $bg-color;
-    border: 1px solid $text-color;
-    padding: 20px 49px;
-    font-family: "Playfair Display", serif;
-    cursor: pointer;
+    @extend %btn;
     &:hover,
     &:focus {
       color: $hover-color;
