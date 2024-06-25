@@ -1,24 +1,52 @@
-%padding{
-    padding-top: 71px;
-    padding-bottom: 92px;
-}
 .header{
+    margin: 0 auto;
     @extend %padding;
     &__list{
-       @include flex();
-        width: 555px;
-        margin: 0 auto;
+        text-align: center;
     }
     &__link{
-        color: $navigation-color;
-        text-decoration: none;
-        text-transform: uppercase;
-        
-    }
-    &__link:hover,
-    &__link:focus{
-        color: $hover-color;
-        
+                color: $navigation-color;
+                text-decoration: none;
+                text-transform: uppercase;
+                
+                
+            }
+            &__link:hover,
+            &__link:focus{
+                color: $hover-color;
+                
+            }
+}
+%padding{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+@media screen and (min-width:768px){
+    .header__list{
+        @include flex();
+        width: 555px;
+        margin: 0 auto;
+        padding-top: 50px;
+        padding-bottom: 50px;
     }
 }
+// .header{
+//     @extend %padding;
+//     &__list{
+//        @include flex();
+//         width: 555px;
+//         margin: 0 auto;
+//     }
+//     &__link{
+//         color: $navigation-color;
+//         text-decoration: none;
+//         text-transform: uppercase;
+        
+//     }
+//     &__link:hover,
+//     &__link:focus{
+//         color: $hover-color;
+        
+//     }
+// }
 

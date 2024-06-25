@@ -25,22 +25,33 @@ h1, h2, h3, h4, h5, h6, p {
   padding: 0;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  width: 100%;
+}
+
 .container {
-  width: 936px;
+  width: 320px;
   padding: 0 15px;
   margin: 0 auto;
 }
 
-.header {
-  padding-top: 71px;
-  padding-bottom: 92px;
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
 }
-
-.header__list {
-  display: flex;
-  justify-content: space-between;
-  width: 555px;
+@media screen and (min-width: 936px) {
+  .container {
+    width: 936px;
+  }
+}
+.header {
   margin: 0 auto;
+}
+.header__list {
+  text-align: center;
 }
 .header__link {
   color: #7D7D7D;
@@ -51,6 +62,21 @@ h1, h2, h3, h4, h5, h6, p {
   color: #03A9F4;
 }
 
+.header {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .header__list {
+    display: flex;
+    justify-content: space-between;
+    width: 555px;
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
 .photo__btn {
   background-color: #FFF;
   border: 1px solid #626262;
@@ -62,13 +88,8 @@ h1, h2, h3, h4, h5, h6, p {
 .photo {
   padding-bottom: 66px;
 }
-.photo__list {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
 .photo__img {
-  margin-bottom: 62px;
+  margin-bottom: 32px;
 }
 .photo__filter {
   color: #B4AD9E;
@@ -83,15 +104,36 @@ h1, h2, h3, h4, h5, h6, p {
   color: #626262;
 }
 .photo__item {
-  margin-bottom: 130px;
-  display: inline-block;
-  width: 420px;
+  margin-bottom: 70px;
+  width: 290px;
 }
-.photo__button-wrap {
-  display: flex;
-  justify-content: center;
+.photo__btn {
+  display: block;
+  margin: 0 auto;
 }
 .photo__btn:hover, .photo__btn:focus {
   color: #03A9F4;
   border-color: #03A9F4;
+}
+
+@media screen and (min-width: 768px) {
+  .photo__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .photo__item {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 936px) {
+  .photo__item {
+    width: 420px;
+  }
+  .photo__img {
+    margin-bottom: 62px;
+  }
+  .photo__item {
+    margin-bottom: 130px;
+  }
 }/*# sourceMappingURL=style.css.map */

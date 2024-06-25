@@ -5,36 +5,30 @@
   font-family: $main-font;
   cursor: pointer;
 }
-.photo {
+.photo{
   padding-bottom: 66px;
-  &__list {
-    @include flex();
-    flex-wrap: wrap;
+    &__img {
+    margin-bottom: 32px;
   }
-  &__img {
-    margin-bottom: 62px;
-  }
-  &__filter {
+    &__filter {
     color: $filter-color;
     margin-bottom: 32px;
   }
-  &__title {
+    &__title {
    @include title();
   }
-  &__text {
+    &__text {
     color: $text-color;
+
   }
-  &__item {
-    margin-bottom: 130px;
-    display: inline-block;
-    width: 420px;
+    &__item {
+    margin-bottom: 70px;
+    width: 290px;
   }
-  &__button-wrap {
-    display: flex;
-    justify-content: center;
-  }
-  &__btn {
+    &__btn {
     @extend %btn;
+    display: block;
+    margin: 0 auto;
     &:hover,
     &:focus {
       color: $hover-color;
@@ -42,3 +36,61 @@
     }
   }
 }
+@media screen and (min-width:768px){
+  .photo__list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .photo__item{
+    width: 354px;
+  }
+}
+@media screen and (min-width:936px){
+  .photo__item{
+    width: 420px;
+  }
+  .photo__img {
+    margin-bottom: 62px;
+  }
+  .photo__item {
+    margin-bottom: 130px;
+  }
+}
+// .photo {
+//   padding-bottom: 66px;
+//   &__list {
+//     @include flex();
+//     flex-wrap: wrap;
+//   }
+//   &__img {
+//     margin-bottom: 62px;
+//   }
+//   &__filter {
+//     color: $filter-color;
+//     margin-bottom: 32px;
+//   }
+//   &__title {
+//    @include title();
+//   }
+//   &__text {
+//     color: $text-color;
+//   }
+//   &__item {
+//     margin-bottom: 130px;
+//     display: inline-block;
+//     width: 420px;
+//   }
+//   &__button-wrap {
+//     display: flex;
+//     justify-content: center;
+//   }
+//   &__btn {
+//     @extend %btn;
+//     &:hover,
+//     &:focus {
+//       color: $hover-color;
+//       border-color: $hover-color;
+//     }
+//   }
+// }
